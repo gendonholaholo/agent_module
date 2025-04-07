@@ -11,8 +11,7 @@
 8. [Pemeliharaan dan Pembaruan](#pemeliharaan-dan-pembaruan)
 9. [Pemecahan Masalah](#pemecahan-masalah)
 10. [Best Practices](#best-practices)
-11. [Roadmap](#roadmap)
-12. [Referensi](#referensi)
+11. [Referensi](#referensi)
 
 ## Pendahuluan
 
@@ -320,28 +319,6 @@ public function optimizeTokenUsage($context, $maxTokens)
    - Horizontal scaling
    - Load distribution
    - Resource optimization
-
-## Roadmap
-
-### Fase 1 (Q1 2024)
-- Implementasi dasar
-- Integrasi WhatsApp
-- Basic AI responses
-
-### Fase 2 (Q2 2024)
-- Advanced context management
-- Token optimization
-- Quality enhancement
-
-### Fase 3 (Q3 2024)
-- Multi-language support
-- Advanced analytics
-- Auto-scaling
-
-### Fase 4 (Q4 2024)
-- Custom model training
-- Advanced security
-- Enterprise features
 
 ## Referensi
 1. [WhatsApp Business API Documentation](https://developers.facebook.com/docs/whatsapp)
