@@ -106,6 +106,108 @@ $recommendations = $qualityEnhancer->getEnhancementRecommendations($response);
 
 Layanan ini memastikan bahwa respons yang dihasilkan tidak hanya relevan tetapi juga berkualitas tinggi, memberikan pengalaman pengguna yang lebih baik.
 
+#### Endpoint List
+
+- **Login Endpoint**:
+  - **Path**: `/api/login`
+  - **Method**: POST
+  - **Controller**: `LoginController@login`
+
+- **Register Endpoint**:
+  - **Path**: `/api/register`
+  - **Method**: POST
+  - **Controller**: `RegisterController@register`
+
+- **Forgot Password Endpoint**:
+  - **Path**: `/api/forgot-password`
+  - **Method**: POST
+  - **Controller**: `ForgotPasswordController@forgotPassword`
+
+- **Reset Password Endpoint**:
+  - **Path**: `/api/reset-password`
+  - **Method**: POST
+  - **Controller**: `ForgotPasswordController@resetPassword`
+
+- **Chat Endpoint**:
+  - **Path**: `/api/chat`
+  - **Method**: POST
+  - **Description**: Used to simulate chat interactions.
+
+- **Waha Webhook Endpoint**:
+  - **Path**: `/api/waha`
+  - **Method**: POST
+  - **Controller**: `WahaWebhookController`
+
+- **Xendit Endpoint**:
+  - **Path**: `/api/xendit`
+  - **Method**: POST
+  - **Controller**: `XenditController`
+
+- **Plan Endpoints**:
+  - **Path**: `/api/plan`
+  - **Methods**: GET, POST
+  - **Controllers**: `PlanController@index`, `PlanController@subscribe`
+
+- **Staff Endpoints**:
+  - **Path**: `/api/staff`
+  - **Methods**: GET, POST, PUT, DELETE
+  - **Controllers**: `StaffController@index`, `StaffController@create`, `StaffController@update`, `StaffController@delete`
+
+- **Balance Endpoints**:
+  - **Path**: `/api/balance`
+  - **Methods**: GET, POST
+  - **Controllers**: `BalanceController@currentBalance`, `BalanceController@topUp`
+
+- **Auth Endpoints**:
+  - **Path**: `/api/auth`
+  - **Methods**: GET, PUT
+  - **Controllers**: `AuthController@me`, `AuthController@updateProfile`
+
+- **Setting Endpoints**:
+  - **Path**: `/api/settings`
+  - **Methods**: GET, PUT
+  - **Controllers**: `SettingController@getSettings`, `SettingController@setOrigin`
+
+- **Virtual Employee Endpoints**:
+  - **Path**: `/api/virtual-employee`
+  - **Methods**: GET, POST
+  - **Controllers**: `VirtualEmployeeController@index`, `VirtualEmployeeController@hire`
+
+- **Knowledge Endpoints**:
+  - **Path**: `/api/knowledge`
+  - **Methods**: GET, POST, PUT, DELETE
+  - **Controllers**: `KnowledgeController@index`, `KnowledgeController@create`, `KnowledgeController@update`, `KnowledgeController@delete`
+
+- **Integration Endpoints**:
+  - **Path**: `/api/integration`
+  - **Methods**: GET, POST
+  - **Controllers**: `IntegrationController@index`, `IntegrationController@connectPlatform`
+
+- **Contract Endpoints**:
+  - **Path**: `/api/contract`
+  - **Methods**: GET, POST, DELETE
+  - **Controllers**: `ContractController@index`, `ContractController@assignKnowledgeToContract`, `ContractController@delete`
+
+- **Thread Endpoints**:
+  - **Path**: `/api/thread`
+  - **Methods**: GET, POST
+  - **Controllers**: `ThreadController@getPlayground`, `ThreadController@assignToAgent`
+
+- **Message Endpoints**:
+  - **Path**: `/api/message`
+  - **Methods**: GET, POST
+  - **Controllers**: `MessageController@getMessageByThread`, `MessageController@createMessage`
+
+- **Order Endpoints**:
+  - **Path**: `/api/order`
+  - **Methods**: GET, PUT
+  - **Controllers**: `OrderController@index`, `OrderController@changeStatus`
+
+- **Geo Endpoints**:
+  - **Path**: `/api/geo`
+  - **Methods**: GET
+  - **Controllers**: `GeoController@search`, `GeoController@detail`
+
 ## Pengujian
 
 Pengujian adalah bagian penting dari pengembangan modul untuk memastikan bahwa setiap komponen berfungsi sesuai harapan. Pengujian dilakukan dalam beberapa tahap, termasuk unit testing, integration testing, dan performance testing.
@@ -149,6 +251,11 @@ Integration testing memastikan bahwa semua komponen bekerja bersama dengan baik 
    - Penanganan rate limit
    - Penanganan error API
    - Penanganan data invalid
+
+3. **Chat Test**
+   - Simulasi interaksi chat
+   - Verifikasi respons sukses
+   - Pengujian skenario chat tambahan
 
 ### Performance Testing
 
